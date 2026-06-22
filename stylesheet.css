@@ -1,0 +1,175 @@
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+* { 
+    font-family: 'Rubik', sans-serif;
+    color: #080808;
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-bottom: clamp(2.5rem, 1.399rem + 4.69vw, 5.625rem);
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+/* Above code is bitey*/
+
+.spacer {
+    padding: 2.5rem clamp(1.5rem, 1.235rem + 1.13vw, 2.5rem);
+}
+
+.dis { /*For the text above the banner*/
+    padding-left: clamp(0.875rem, 0.741rem + 0.56vw, 1.25rem);
+    padding-right: clamp(0.875rem, 0.741rem + 0.56vw, 1.25rem);
+}
+
+.heads {
+    display: flex;
+    font-size: 12px;
+    background-color: #5eb3de;
+    border-bottom: 1px solid #113142;
+}
+
+h1 {  /* Scales smoothly from 16px (1rem) at 430px wide to 18px (1.125rem) at 1440px wide */
+    font-size: clamp(1.75rem, 1.218rem + 1.98vw, 3rem);
+    text-rendering: optimizeLegibility;
+    text-align: center;
+}
+
+p {  /* Scales smoothly from 28px at 430px wide to 48px at 1440px wide */
+    font-size: clamp(1rem, 0.947rem + 0.198vw, 1.125rem);
+    overflow-wrap: break-word;
+}
+
+.logo{
+    height: 80px;
+    width: auto;
+    padding: 3px;
+}
+
+/* Base styles for the banner */
+#banner {
+    position: -webkit-sticky;
+    position: sticky; /* Keeps it locked to the screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #5eb3de;
+    display: flex;
+    align-items: center;
+    z-index: 100; /* Keeps it on top of other content */
+}
+
+.splash {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+/* footer appearance */
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #5eb3de;
+    background-image: url('Images/footer.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left bottom;
+    padding: 0.7%; 
+    position: absolute;
+    bottom: 0;
+}
+
+.left{  /*to set push the footer text off the 'logo' image*/
+    padding-left: 250px;
+}
+
+.right {
+    margin-left: auto; 
+    text-align: right;
+    padding-right: 20px;
+}
+
+a { /*Seen in the links in the banner*/
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a:hover {
+    text-shadow:
+        0 0 0.104vw #ffdd91,
+        0 0 0.208vw #ffdd91,
+        0 0 0.417vw #ffffff,
+        0 0 4.167vw #ffffff;
+}
+
+/*CONTACT PAGE FORM*/
+/* --- Form Wrapper Layout --- */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.grid-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.field-group, .large-field {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Styling for the container */
+.table-container {
+  width: 100%;             /* Ensures the container fills its parent space */
+  overflow-x: auto;        /* Adds a horizontal scrollbar if the table overflows */
+  border: 1px solid #ccc;  /* Optional visual box styling */
+  border-radius: 4px;      /* Optional curved corners */
+}
+
+th, td {
+  padding: 12px;           /* Provides readable spacing inside cells */
+  text-align: left;        /* Standard text alignment alignment */
+  border-bottom: 1px solid #ddd;
+}
+
+.shot{
+  width: 300px;
+  height: auto;
+}
