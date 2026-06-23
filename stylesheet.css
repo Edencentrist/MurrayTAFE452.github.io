@@ -156,7 +156,6 @@ button {
   cursor: pointer;
 }
 
-/* Styling for the container */
 .table-container {
   width: 100%;             /* Ensures the container fills its parent space */
   overflow-x: auto;        /* Adds a horizontal scrollbar if the table overflows */
@@ -171,6 +170,11 @@ th, td {
 }
 
 .shot{
-  width: 300px;
+  width: clamp(10rem, 7.5rem + 12.5vw, 18.75rem);
   height: auto;
 }
+
+@media only screen and (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
