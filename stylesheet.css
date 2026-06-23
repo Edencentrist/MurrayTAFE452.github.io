@@ -24,6 +24,7 @@ html {
 
 .spacer {
     padding: 2.5rem clamp(1.5rem, 1.235rem + 1.13vw, 2.5rem);
+    padding-bottom: clamp(0rem, 11.932rem - 15.909vw, 8.75rem);
 }
 
 .dis { /*For the text above the banner*/
