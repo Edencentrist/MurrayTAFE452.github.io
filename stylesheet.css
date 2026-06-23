@@ -157,15 +157,15 @@ button {
 }
 
 .table-container {
-  width: 100%;             /* Ensures the container fills its parent space */
-  overflow-x: auto;        /* Adds a horizontal scrollbar if the table overflows */
-  border: 1px solid #ccc;  /* Optional visual box styling */
-  border-radius: 4px;      /* Optional curved corners */
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px; 
 }
 
 th, td {
-  padding: 12px;           /* Provides readable spacing inside cells */
-  text-align: left;        /* Standard text alignment alignment */
+  padding: 12px;
+  text-align: left;
   border-bottom: 1px solid #ddd;
 }
 
