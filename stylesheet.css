@@ -117,6 +117,7 @@ a:hover {
   max-width: 600px;
   margin: 0 auto;
   font-family: sans-serif;
+  padding-bottom: clamp(0rem, 11.932rem - 15.909vw, 8.75rem);
 }
 
 .grid-fields {
