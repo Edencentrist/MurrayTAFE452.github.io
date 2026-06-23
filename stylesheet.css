@@ -58,15 +58,14 @@ p {  /* Scales smoothly from 28px at 430px wide to 48px at 1440px wide */
 
 /* Base styles for the banner */
 #banner {
-    position: -webkit-sticky;
-    position: sticky; /* Keeps it locked to the screen */
+    position: sticky; 
     top: 0;
     left: 0;
     width: 100%;
     background-color: #5eb3de;
     display: flex;
     align-items: center;
-    z-index: 100; /* Keeps it on top of other content */
+    z-index: 100;
 }
 
 .splash {
@@ -114,7 +113,6 @@ a:hover {
 }
 
 /*CONTACT PAGE FORM*/
-/* --- Form Wrapper Layout --- */
 .form-container {
   max-width: 600px;
   margin: 0 auto;
